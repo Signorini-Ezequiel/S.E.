@@ -72,9 +72,21 @@ body {
     background-color: var(--color-light);
     text-align: center;
 }
+header {
+    width: 100%;
+    height: 480px;
+    background-color: var(--color-light);
+    background: -webkit-linear-gradient(220deg, rgba(189, 199, 80, 0.3), rgba(102, 174, 148, 0.3)), url("/assets/images/landing-img-min.jpg");
+    background: linear-gradient(220deg, rgba(189, 199, 80, 0.3), rgba(102, 174, 148, 0.3)), url("/assets/images/landing-img-min.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-attachment: fixed;
+    margin-bottom: 250px;
+}
 footer {
-    background: -webkit-linear-gradient(220deg, rgba(189, 199, 80, 0.2), rgba(102, 174, 148, 0.2)), url("/assets/images/landing-img.png");
-    background: linear-gradient(220deg, rgba(189, 199, 80, 0.3), rgba(102, 174, 148, 0.3)), url("/assets/images/landing-img.png");
+    background: -webkit-linear-gradient(220deg, rgba(189, 199, 80, 0.2), rgba(102, 174, 148, 0.2)), url("/assets/images/landing-img-min.jpg");
+    background: linear-gradient(220deg, rgba(189, 199, 80, 0.3), rgba(102, 174, 148, 0.3)), url("/assets/images/landing-img-min.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -109,18 +121,6 @@ i {
     font-family: var(--primary-font);
 }
 
-header {
-    width: 100%;
-    height: 480px;
-    background-color: var(--color-light);
-    background: -webkit-linear-gradient(220deg, rgba(189, 199, 80, 0.3), rgba(102, 174, 148, 0.3)), url("/assets/images/landing-img.png");
-    background: linear-gradient(220deg, rgba(189, 199, 80, 0.3), rgba(102, 174, 148, 0.3)), url("/assets/images/landing-img.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-attachment: fixed;
-    margin-bottom: 250px;
-}
 
 /* ======== Class styles ========== */
 
@@ -241,8 +241,8 @@ header {
 
 .phrase {
     margin-top: 100px;
-    background: -webkit-linear-gradient(220deg, rgba(189, 199, 80, 0.2), rgba(102, 174, 148, 0.2)), url("/assets/images/phrase-img.png");
-    background: linear-gradient(220deg, rgba(189, 199, 80, 0.3), rgba(102, 174, 148, 0.3)), url("/assets/images/phrase-img.png");
+    background: -webkit-linear-gradient(220deg, rgba(189, 199, 80, 0.2), rgba(102, 174, 148, 0.2)), url("/assets/images/phrase-img-min.jpg");
+    background: linear-gradient(220deg, rgba(189, 199, 80, 0.3), rgba(102, 174, 148, 0.3)), url("/assets/images/phrase-img-min.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
