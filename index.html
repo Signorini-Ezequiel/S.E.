@@ -18,9 +18,22 @@
 </head>
 <body>
     <header class="landing" id="landing">
-        <section class="nav">
+        <nav>
             <a href="/index.html" class="logo"><img src="/assets/images/logo.svg" class="logo-img"></a>
-        </section>
+
+            <label for="menu" class="nav-label">
+                <i class="fa-solid fa-bars hamburguer"></i>
+            </label>
+            <input type="checkbox" id="menu" class="nav-input">
+            
+            <ul>
+                <li class="nav-element"><a href="#acerca-mi" class="nav-link">Acerca de mí</a></li>
+                <li class="nav-element"><a href="#objetivos" class="nav-link">Objetivos</a></li>
+                <li class="nav-element"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li class="nav-element"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+            </ul>
+        </nav>
+
         <section class="landing-text">
             <h1>Signorini Ezequiel</h1>
             <h3>Programador</h3>
@@ -32,7 +45,8 @@
         <section class="profile-img"></section>
     </header>
     <main>
-        <article>
+        <article id="acerca-mi">
+            <div id="acerca-mi" class="spacing"></div>
             <h2>Acerca de m&iacute;</h1>
             <hr>
 
@@ -58,7 +72,8 @@
             </div>
         </article>
 
-        <article>
+        <article id="objetivos">
+            <div id="objetivos" class="spacing"></div>
             <h2>Objetivos</h1>
             <hr>
 
@@ -70,6 +85,7 @@
         </article>
 
         <article>
+            <div id="habilidades" class="spacing"></div>
             <h2>Habilidades</h1>
             <hr>
 
@@ -92,7 +108,8 @@
                 </div>
             </div>
         </article>
-        <article>
+        <article id="proyectos">
+            <div id="proyectos" class="spacing"></div>
             <h2>Proyectos</h1>
             <hr>
 
@@ -104,6 +121,8 @@
             </div>
         </article>
     </main>
+
+    <script src="/index.js"></script>
 </body>
 <footer>
     <a href="#landing" class="up"><i class="fa-solid fa-angle-up up-img"></i></a>

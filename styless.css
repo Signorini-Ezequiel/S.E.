@@ -8,6 +8,7 @@
 	--color-primary: #bdc750;
 
 	--color-secondary: #66ae94;
+	--color-secondary-dark: #4e947a;
 
 	--color-dark: #757575;
 	--color-medium: #ebebeb;
@@ -113,9 +114,7 @@ footer {
 	background-position: 0 0;
 	background-attachment: fixed;
 	padding: 50px 0;
-}
-article {
-	margin-bottom: 150px;
+	margin-top: 130px;
 }
 p {
 	font-family: var(--primary-font);
@@ -141,22 +140,77 @@ i {
 	font-weight: 500;
 	font-family: var(--primary-font);
 }
+ul {
+	display: none;
+	margin-left: auto;
+	margin-right: 10px;
+}
+nav {
+	position: fixed;
+	display: flex;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 25px 0;
+	transition: all .6s ease-in-out;
+	z-index: 20;
+}
+
 
 /* ======== Class styles ========== */
 
-.nav {
-	position: fixed;
-	top: 0;
-	left: 0;
+.spacing {
+	height: 130px;
 }
+.abajo {
+	background-color: var(--color-secondary-dark);
+	padding: 10px 0;
+	box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
+}
+.abajo .nav-link{
+	color: var(--color-light);
+}
+.abajo .logo-img {
+	width: 70px;
+	height: 50px;
+}
+.abajo .logo {
+	left: 3%;
+}
+/* .abajo .nav-label {
+	display: block;
+} */
+.abajo ul {
+	display: flex;
+}
+
+
+.hamburguer {
+	color: var(--color-light);
+	font-size: 38px;
+}
+.nav-input {
+	display: none;
+}
+.nav-label {
+	margin-right: 3%;
+	margin-left: auto;
+	display: none;
+	transition: all .5s ease-in-out;
+}
+
 
 .logo {
 	display: block;
-	margin-left: 30px;
+	position: absolute;
+	top: 0;
+	left: calc(50% - 45px);
+	transition: all .8s ease-in-out;
 }
 .logo-img {
-	width: 70px;
-	height: 50px;
+	width: 90px;
+	height: 70px;
+	transition: all .5s ease-in-out;
 }
 
 .landing-text {
@@ -174,6 +228,35 @@ i {
 	font-family: var(--secondary-font);
 	font-weight: lighter;
 }
+
+.nav-link {
+	text-decoration: none;
+	color: var(--color-light);
+	font-family: var(--secondary-font);
+	font-size: 22px;
+	margin: 0 10px;
+	transition: 0.4s ease-in-out;
+}
+.nav-link::after {
+	content: "";
+	width: 0;
+	height: 3px;
+	position: absolute;
+	top: 85%;
+	left: 15%;
+	/* border-radius: 3px; */
+	background-color: var(--color-light);
+	z-index: 30;
+	transition: width .5s;
+}
+.nav-element:hover .nav-link::after {
+	width: 70%;
+}
+.nav-element {
+	list-style: none;
+	position: relative;
+}
+
 
 .social-media {
 	text-align: center;
