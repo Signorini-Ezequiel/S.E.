@@ -5,7 +5,7 @@
 	align-items: center;
 }
 ::-webkit-scrollbar {
-	width: 0;
+	display: none;
 }
 html {
 	scroll-behavior: smooth;
