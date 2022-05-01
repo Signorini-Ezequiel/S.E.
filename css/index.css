@@ -294,21 +294,8 @@ nav {
 
 .phrase {
 	margin-top: 100px;
-	background: -webkit-linear-gradient(
-			220deg,
-			rgba(189, 199, 80, 0.3),
-			rgba(102, 174, 148, 0.3)
-		),
-		url('/assets/images/phrase-img.webp');
-	background: linear-gradient(
-			220deg,
-			rgba(189, 199, 80, 0.3),
-			rgba(102, 174, 148, 0.3)
-		),
-		url('/assets/images/phrase-img.webp');
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: var(--color-secondary-dark);
+	box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.3);
 	height: 300px;
 }
 .phrase > pre {
@@ -317,11 +304,16 @@ nav {
 	font-weight: 300;
 	font-style: italic;
 	padding-top: 80px;
+	text-shadow: var(--shadow-secondary);
 }
 .phrase > hr {
 	background-color: var(--color-light);
 	margin-bottom: 15px;
 	margin-top: 20px;
+	box-shadow: var(--shadow-secondary);
+}
+.phrase > h4 {
+	text-shadow: var(--shadow-secondary);
 }
 
 .flex > div:nth-child(1) {
