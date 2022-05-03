@@ -1,4 +1,7 @@
 /* ======== General styles ========== */
+::-webkit-scrollbar {
+	width: 0px;
+}
 
 header {
 	width: 100%;

@@ -4,9 +4,6 @@
 	box-sizing: border-box;
 	align-items: center;
 }
-::-webkit-scrollbar {
-	width: 0px;
-}
 html {
 	scroll-behavior: smooth;
 }
