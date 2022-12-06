@@ -5,23 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Links to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,900&display=swap" rel="stylesheet"> 
     
+    <!-- Link to CSS files -->
     <link rel="stylesheet" href="/css/index.css"/>
     <link rel="stylesheet" href="/css/base.css">
+    <!-- Link to FontAwesome -->
     <script src="https://kit.fontawesome.com/79f0e55104.js" crossorigin="anonymous"></script>
     
-    <link rel="shortcut icon" href="/assets/images/logo.ico" type="image/x-icon">
-    <title>Inicio | S.E.</title>
+    <!-- Add the logo -->
+    <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
+
+    <!-- Add the title -->
+    <title>Inicio | SE</title>
 </head>
 <body>
     <header class="landing" id="landing">
         <nav>
-            <a href="/index.html" class="logo"><img src="/assets/images/logo.webp" class="logo-img"></a>
+            <a href="/"><h6>SE</h6></a>
 
             <label for="menu" class="nav-label">
                 <i class="fa-solid fa-bars hamburguer"></i>
@@ -29,68 +35,35 @@
             <input type="checkbox" id="menu" class="nav-input">
             
             <ul>
-                <li class="nav-element"><a href="#acerca-mi" class="nav-link">Acerca de mí</a></li>
-                <li class="nav-element"><a href="#objetivos" class="nav-link">Objetivos</a></li>
-                <li class="nav-element"><a href="#habilidades" class="nav-link">Habilidades</a></li>
-                <li class="nav-element"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li class="nav-element"><a href="#about-me" class="nav-link">Acerca de m&iacute;</a></li>
+                <li class="nav-element"><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li class="nav-element"><a href="#objectives" class="nav-link">Objetivos</a></li>
+                <li class="nav-element"><a href="#projects" class="nav-link">Proyectos</a></li>
             </ul>
         </nav>
 
-        <section class="landing-text">
-            <h1>Signorini Ezequiel</h1>
-            <h3>Programador</h3>
-        </section>
-        
-        <section class="social-media">
-            <a href="https://github.com/Signorini-Ezequiel" class="social-link" target="_bank"><i class="icon fa-brands fa-github"></i></a>
-            <a href="/contacto.html" class="social-link"><i class="icon fa-solid fa-envelope"></i></a>
-        </section>
-        
-        <section class="profile-img"></section>
+        <div class="flex">
+            <section class="landing-text">
+                <h1>El crecimiento es<br/>un camino<br/>para cada d&iacute;a</h1>
+                <h3>Signorini Ezequiel</h3>
+            </section>
+            <img src="/assets/images/landing-img.webp" alt="landing-img">
+            <div class="degraded"></div>
+        </div>
     </header>
     <main>
-        <article>
-            <div id="acerca-mi" class="spacing"></div>
-            <h2>Acerca de m&iacute;</h1>
+        <article id="about-me">
+            <h2>Acerca de m&iacute;</h2>
             <hr>
 
             <p><b>A</b>mante de la inform&aacute;tica y la soluci&oacute;n de problemas. Desde que conoc&iacute; la
                 programaci&oacute;n me apasion&eacute; por ella y hoy puedo decir que m&iacute; objetivo de resolver problemas por
                 medio de la programaci&oacute;n es una realidad.
             </p>
-            <div class="flex">
-                <div class="data">
-                    <div class="interest"><i class="fa-solid fa-film interest-img"></i> Pel&iacute;culas</div>
-                    <div class="interest"><i class="fa-solid fa-paintbrush interest-img"></i> Dibujo</div>
-                </div>
-                <div class="data">
-                    <pre><strong> Cumplea&ntilde;os   : </strong> 13/5</pre>
-                    <pre><strong> Edad         : </strong> 16</pre>
-                    <pre><strong> Nacionalidad : </strong> Argentina</pre>
-                </div>
-            </div>
-            <div class="phrase">
-                <pre><i>"</i>  El crecimiento es un camino para cada d&iacute;a  <i>"</i></pre>
-                <hr>
-                <h4>Signorini Ezequiel</h4>
-            </div>
         </article>
 
-        <article>
-            <div id="objetivos" class="spacing"></div>
-            <h2>Objetivos</h1>
-            <hr>
-
-            <p><b>M</b>&iacute; misi&oacute;n como programador es ayudar a las empresas en sus ideales
-                por medio de mis conocimientos y experiencia. Poniendo a un lado
-                las diferencias y trabajando en equipo, que es a m&iacute; entender la mejor forma
-                de mejorar y llegar al objetivo de la mejor forma posible.
-            </p>
-        </article>
-
-        <article>
-            <div id="habilidades" class="spacing"></div>
-            <h2>Habilidades</h1>
+        <article id="skills">
+            <h2>Habilidades</h2>
             <hr>
 
             <div class="flex">
@@ -111,29 +84,52 @@
                     <span class="tooltip-box">python</span>
                 </div>
             </div>
+            <a href="/know-more.html" class="know-more">Descubrir m&aacute;s <i class="fa-solid fa-certificate"></i></a>
         </article>
 
-        <article>
-            <div id="proyectos" class="spacing"></div>
-            <h2>Proyectos</h1>
-            <hr>
+        <article id="objectives">
+            <h2>Objetivos</h2>
 
             <div class="flex">
-                <div class="project"><i class="fa-solid fa-mug-saucer project-img"></i></div>
-                <div class="project"><i class="fa-solid fa-mug-saucer project-img"></i></div>
-                <div class="project"><i class="fa-solid fa-mug-saucer project-img"></i></div>
-                <div class="project"><i class="fa-solid fa-mug-saucer project-img"></i></div>
+                <img src="/assets/images/thinking.webp" alt="thinking">
+                <p>
+                    <b>M</b>&iacute; misi&oacute;n como programador es ayudar a las empresas en sus ideales
+                    por medio de mis conocimientos y experiencia. Poniendo a un lado
+                    las diferencias y trabajando en equipo, que es a m&iacute; entender la mejor forma
+                    de mejorar y llegar al objetivo de la mejor forma posible.
+                </p>
+            </div>
+        </article>
+        
+        <article id="projects">
+            <h2>Proyectos</h2>
+            <hr>
+    
+            <div class="flex">
+                <div class="project">
+                    <h3> - </h3>
+                    <p>
+                        -
+                    </p>
+                    <img src="/assets/images/" alt="project-img">
+                </div>
             </div>
         </article>
     </main>
     <footer>
-        <a href="#landing" class="up"><i class="fa-solid fa-angle-up up-img"></i></a>
-        <div class="flex">
-            <img src="/assets/images/logo.webp" alt="S.E." class="footer-logo">
-            <h5>Dise&ntilde;ado y programado por Ezequiel Signorini</h5>
-        </div>
-    </footer>
+        <section class="flex">
+            <img src="/assets/images/footer-img.webp" alt="">
+            <h5>Dise&ntilde;ado y programado por <strong>Signorini Ezequiel</strong></h5>
+        </section>
 
+        <section class="links"> <!-- antes social-media -->
+            <a href="https://github.com/Signorini-Ezequiel" class="social-link" target="_bank"><i class="icon fa-brands fa-github"></i></a>
+            <a href="/contacto.html" class="social-link"><i class="fa-regular fa-envelope icon"></i></a>
+            <a href="#landing" class="social-link"><i class="fa-solid fa-arrow-up icon"></i></a>
+        </section>
+        <div class="degraded"></div>
+    </footer>
+    
     <script src="/index.js"></script>
 </body>
 </html>

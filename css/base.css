@@ -13,33 +13,36 @@ html {
 	--shadow-secondary: 0px 3px 5px rgba(0, 0, 0, 0.3);
 
 	/* ======== Color Variables ========== */
-	--color-primary: #bdc750;
+	--color-primary: #BDC750;
 
-	--color-secondary: #66ae94;
-	--color-secondary-dark: #4e947a;
+	--color-secondary: #66AE94;
+	--color-secondary-dark: #548D79;
 
 	--color-dark: #757575;
 	--color-very-dark: #4A4A4A;
-	--color-medium: #ebebeb;
-	--color-light: #f6f6f6;
+	--color-medium: #606060;
+	--color-light: #FCFCFC;
 
 	/* ======== Font Variables ========== */
-	--title-font: 'Abril Fatface', cursive;
-	--primary-font: 'Roboto', sans-serif;
-	--secondary-font: 'Cairo', sans-serif;
+	--title-font: 'Raleway', sans-serif;
+	--primary-font: 'Raleway', sans-serif;
+	--icon-font: 'Bodoni Moda', serif;
 }
 
-hr {
-	background-color: var(--color-primary);
-	width: 100px;
-	height: 3px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 40px;
-	border-width: 0px;
-	border-radius: 5px;
-}
+/* ======== Element styles ========== */
 body {
 	background-color: var(--color-light);
 	text-align: center;
+	overflow-x: hidden;
+}
+header {
+	height: 100vh;
+}
+footer {
+	height: 100vh;
+}
+
+/* ======== Class styles ========== */
+.flex {
+	display: flex;
 }
