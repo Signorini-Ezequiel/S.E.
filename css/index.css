@@ -26,10 +26,12 @@ h1 {
 	font-size: 72px;
 	margin-bottom: 15px;
 }
-h2:nth-child(1) {
+h2 {
 	color: var(--color-primary);
 	font-size: 40px;
 	padding-top: 150px;
+}
+h2.h2-left {
 	margin-left: 160px;
 }
 h3 {
@@ -131,7 +133,7 @@ hr {
 	border-width: 0px;
 	border-radius: 5px;
 }
-hr:nth-child(1) {
+hr.hr-left {
 	margin-left: 160px;
 }
 ul {
