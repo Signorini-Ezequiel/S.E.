@@ -13,10 +13,12 @@ html {
 	--shadow-secondary: 0px 3px 5px rgba(0, 0, 0, 0.3);
 
 	/* ======== Color Variables ========== */
-	--color-primary: #BDC750;
+	--color-primary-dark: #BDC750;
+	--color-primary: #CDC661;
+	--color-primary-light: #F1E979;
 
-	--color-secondary: #66AE94;
-	--color-secondary-dark: #548D79;
+	--color-secondary: #145DA0;
+	--color-secondary-dark: #0C2D48;
 
 	--color-dark: #757575;
 	--color-very-dark: #4A4A4A;

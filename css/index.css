@@ -27,7 +27,7 @@ h1 {
 	margin-bottom: 15px;
 }
 h2 {
-	color: var(--color-primary);
+	color: var(--color-primary-dark);
 	font-size: 40px;
 	padding-top: 150px;
 }
@@ -124,7 +124,7 @@ article:nth-child(1) {
 	text-align: start;
 }
 hr {
-	background-color: var(--color-primary);
+	background-color: var(--color-primary-dark);
 	width: 100px;
 	height: 3px;
 	margin-left: auto;
@@ -210,7 +210,7 @@ ul {
 	height: 60px;
 
 	display: inline-block;
-	border: 3px solid var(--color-primary);
+	border: 3px solid var(--color-primary-dark);
 	border-radius: 50%;
 	margin: 0 10px;
 
@@ -219,14 +219,14 @@ ul {
 .icon {
 	margin-top: 9px;
 	font-size: 34px;
-	color: var(--color-primary);
+	color: var(--color-primary-dark);
 }
 .social-link:hover .icon {
 	color: var(--color-light);
 	transition: 0.5s ease-in-out;
 }
 .social-link:hover {
-	background-color: var(--color-primary);
+	background-color: var(--color-primary-dark);
 	box-shadow: var(--shadow-secondary);
 	transform: translateY(-10%);
 }
@@ -309,23 +309,52 @@ ul {
 	margin-right: 20%;
 }
 
+.skills {
+	background-color: var(--color-secondary-dark);
+	justify-content: space-between;
+}
+h2.skill-title {
+	color: var(--color-primary-light);
+}
+h2.skill-hr {
+	color: var(--color-primary-light);
+}
+.technologies {
+	margin-bottom: 20vh;
+}
 .skill-img {
-	color: var(--color-light);
+	color: var(--color-secondary);
 	font-size: 45px;
-	background-color: var(--color-secondary);
+	background-color: var(--color-light);
 	border-radius: 50%;
 	width: 80px;
 	height: 80px;
 	padding-top: 22%;
 	text-align: center;
-	text-shadow: var(--shadow-secondary);
 	transition: all 0.5s ease-out;
 }
 .skill-img:hover {
-	box-shadow: var(--shadow-primary);
+	box-shadow: var(--shadow-secondary);
 }
 .skill:hover .skill-img {
 	transform: translateY(-10%);
+}
+.know-more {
+	background-color: var(--color-primary-dark);
+	display: inline-block;
+	color: var(--color-light);
+	padding: 20px 30px;
+	font-size: 18px;
+	font-family: var(--primary-font);
+	border-radius: 8px;
+	transition: all .3s ease-out;
+}
+.know-more:hover {
+	box-shadow: var(--shadow-secondary);
+}
+.know-more-icon {
+	font-size: 22px;
+	margin-left: 15px;
 }
 
 .tooltip {
@@ -338,14 +367,14 @@ ul {
 	top: 120%;
 	text-align: center;
 	text-transform: uppercase;
-	background-color: var(--color-dark);
-	color: var(--color-light);
-	box-shadow: var(--shadow-primary);
+	background-color: var(--color-light);
+	color: var(--color-secondary-dark);
+	box-shadow: var(--shadow-secondary);
 	width: 120px;
-	padding-top: 3px;
-	padding-bottom: 3px;
+	padding: 8px 0 8px;
 	border-radius: 5px;
 	font-family: var(--primary-font);
+	font-weight: 600;
 	z-index: 1;
 }
 .tooltip-box::after {
@@ -354,12 +383,26 @@ ul {
 	position: absolute;
 	bottom: 100%;
 	left: calc(50% - 7px);
-	border-bottom: 7px solid var(--color-dark);
+	border-bottom: 7px solid var(--color-light);
 	border-left: 7px solid transparent;
 	border-right: 7px solid transparent;
 }
 .tooltip:hover .tooltip-box {
 	display: inline-block;
+}
+
+.h2-right {
+	margin: 0 auto 20px 55vw;
+	color: var(--color-very-dark);
+}
+.objectives-container {
+	background-color: var(--color-primary);
+	padding: 40px;
+	width: 80vw;
+	margin: 0 auto;
+}
+.objectives-text {
+	color: var(--color-light);
 }
 
 .project {
@@ -382,14 +425,14 @@ ul {
 }
 
 .up {
-	color: var(--color-primary);
-	border: 3px solid var(--color-primary);
+	color: var(--color-primary-dark);
+	border: 3px solid var(--color-primary-dark);
 	border-radius: 50%;
 	padding: 20px 13px 10px;
 	transition: all 0.5s ease-in-out;
 }
 .up-img {
-	color: var(--color-primary);
+	color: var(--color-primary-dark);
 	margin-bottom: 60px;
 	font-size: 30px;
 	text-shadow: var(--shadow-secondary);
@@ -397,7 +440,7 @@ ul {
 }
 .up:hover {
 	color: var(--color-light);
-	background-color: var(--color-primary);
+	background-color: var(--color-primary-dark);
 	box-shadow: var(--shadow-secondary);
 }
 .up:hover .up-img {
