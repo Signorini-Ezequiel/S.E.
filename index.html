@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="/css/base.css">
     <!-- Link to FontAwesome -->
     <script src="https://kit.fontawesome.com/79f0e55104.js" crossorigin="anonymous"></script>
+    <!-- Link to Bootstrap -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
     
     <!-- Add the logo -->
     <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
@@ -27,7 +29,7 @@
 <body>
     <header class="landing" id="landing">
         <nav>
-            <a href="/"><h6>SE</h6></a>
+            <a href="/"><h6 class="logo">SE</h6></a>
 
             <label for="menu" class="nav-label">
                 <i class="fa-solid fa-bars hamburguer"></i>
@@ -48,12 +50,11 @@
                 <h3>Signorini Ezequiel</h3>
             </section>
             <img src="/assets/images/landing-img.webp" alt="landing-img">
-            <div class="degraded"></div>
         </div>
     </header>
     <main>
         <article id="about-me">
-            <h2 class="h2-left">Acerca de m&iacute;</h2>
+            <h2 class="title-left">Acerca de m&iacute;</h2>
             <hr class="hr-left">
 
             <p><b>A</b>mante de la inform&aacute;tica y la soluci&oacute;n de problemas. Desde que conoc&iacute; la
@@ -88,7 +89,7 @@
         </article>
 
         <article id="objectives">
-            <h2 class="h2-right">Objetivos</h2>
+            <h2 class="title-right">Objetivos</h2>
 
             <div class="flex objectives-container">
                 <img src="/assets/images/thinking.webp" alt="thinking">
@@ -102,36 +103,37 @@
         </article>
         
         <article id="projects">
-            <h2 class="project-title">Proyectos</h2>
+            <h2 class="projects-title">Proyectos</h2>
             <hr>
     
-            <div class="flex">
-                <div class="project">
-                    <div class="project-content">
-                        <h3 class="project-h3">CODE</h3>
-                        <p class="project-p">
-                            Cifrar información nunca fue tan fácil
-                        </p>
-                    </div>
-                    <img src="/assets/images/projects/code-img.png" alt="project-img">
+            <div class="project">
+                <div class="project-content flex">
+                    <h3 class="project-title">CODE</h3>
+                    <p class="project-description">
+                        Cifrar información nunca fue tan fácil
+                    </p>
                 </div>
             </div>
         </article>
     </main>
     <footer>
-        <section class="flex">
-            <img src="/assets/images/footer-img.webp" alt="">
-            <h5>Dise&ntilde;ado y programado por <strong>Signorini Ezequiel</strong></h5>
-        </section>
-
-        <section class="links"> <!-- antes social-media -->
-            <a href="https://github.com/Signorini-Ezequiel" class="social-link" target="_bank"><i class="icon fa-brands fa-github"></i></a>
-            <a href="/contacto.html" class="social-link"><i class="fa-regular fa-envelope icon"></i></a>
-            <a href="#landing" class="social-link"><i class="fa-solid fa-arrow-up icon"></i></a>
-        </section>
-        <div class="degraded"></div>
+        <div class="flex footer-container">
+            <img src="/assets/images/footer-img.webp" alt="SIGNORINI Ezequiel" class="footer-img">
+            <section class="flex">
+                <div class="links">
+                    <h6 class="footer-title">Navegar</h6>
+                    <a href="/contacto.html" class="footer-link">Mail</a>
+                    <br>
+                    <a href="https://github.com/Signorini-Ezequiel" class="footer-link" target="_bank">GitHub</a>
+                    <a href="#landing" class="title footer-link">Inicio</i></a>
+                </div>
+            </section>
+        </div>
     </footer>
     
+    <!-- Own JS file -->
     <script src="/index.js"></script>
+    <!-- Bootstrap JS file -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
 </body>
 </html>
