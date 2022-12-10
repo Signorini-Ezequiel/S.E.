@@ -169,14 +169,11 @@ ul {
 .abajo .nav-link:hover {
 	background-color: #0C2D48;
 }
-.abajo h6:nth-child(1) {
+.abajo .logo:nth-child(1), .abajo .hamburguer {
 	font-size: 38px;
+	color: var(--color-light);
 }
 
-.hamburguer {
-	color: var(--color-light);
-	font-size: 38px;
-}
 .nav-input {
 	display: none;
 }
@@ -203,17 +200,35 @@ ul {
 
 .nav-link {
 	text-decoration: none;
+	position: relative;
 	padding: 17px 18px;
 	color: var(--color-light);
 	font-family: var(--primary-font);
 	font-size: 22px;
 	transition: 0.3s ease-in-out;
 }
-
+.nav-link::after {
+	content: "";
+	width: 0;
+	height: 3px;
+	position: absolute;
+	top: 75%;
+	left: 15%;
+	/* border-radius: 3px; */
+	background-color: var(--color-primary-light);
+	z-index: 30;
+	transition: width .5s;
+}
 .nav-element {
 	list-style: none;
 	position: relative;
 	font-weight: 300;
+}
+.nav-element:hover .nav-link::after {
+	width: 60%;
+}
+.abajo .nav-element:hover .nav-link::after {
+	width: 0;
 }
 
 
@@ -235,9 +250,11 @@ ul {
 	position: absolute;
 	top: 0;
 	left: 3%;
-	font-weight: light;
-	background-color: transparent;
 	color: var(--color-light);
+	color: var(--color-light);
+	font-family: var(--icon-font);
+	font-weight: 600;
+	font-size: 42px;
 	transition: all .3s ease-in;
 }
 .icon {
@@ -472,27 +489,48 @@ h2.skill-hr {
 /* Footer syles */
 .footer-container {
 	position: absolute;
+	justify-items: start;
 	left: 20px;
 	bottom: 0;
+}
+.footer-logo {
+	color: var(--color-light);
+	font-family: var(--icon-font);
+	font-size: 42px;
+	font-weight: 600;
+	padding-bottom: 20px;
 }
 .footer-title {
 	color: var(--color-primary-light);
 	font-family: var(--primary-font);
 	font-weight: 600;
 	font-size: 24px;
-	margin-bottom: 20px;
+	padding-bottom: 15px;
+	padding-right: 30px;
 }
 .footer-link {
 	color: var(--color-light);
 	font-family: var(--primary-font);
 	font-size: 18px;
-	display: inline-block;
-	margin-bottom: 10px;
+	padding-bottom: 10px;
+	position: relative;
+}
+.footer-link::after {
+	content: "";
+	width: 0;
+	height: 2px;
+	position: absolute;
+	top: 65%;
+	left: 3%;
+	/* border-radius: 3px; */
+	background-color: var(--color-primary-light);
+	z-index: 30;
+	transition: width .5s;
+}
+.footer-link:hover .footer-link::after {
+	width: 70%;
 }
 .footer-img {
 	width: 40vw;
 	height: auto;
-}
-.links {
-	margin-right: 50px;
 }
