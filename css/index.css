@@ -534,3 +534,14 @@ h2.skill-hr {
 	width: 40vw;
 	height: auto;
 }
+
+/* Animations */
+/* Header */
+@keyframes move {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
