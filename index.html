@@ -39,7 +39,7 @@
 <body>
     <header class="landing" id="landing">
         <nav>
-            <a href="/"><h6 class="logo">SE</h6></a>
+            <a href="/"><h6 class="logo"></h6></a>
 
             <label for="menu" class="nav-label">
                 <i class="fa-solid fa-bars hamburguer"></i>
@@ -49,8 +49,9 @@
             <ul>
                 <li class="nav-element"><a href="#about-me" class="nav-link">Acerca de m&iacute;</a></li>
                 <li class="nav-element"><a href="#skills" class="nav-link">Habilidades</a></li>
-                <li class="nav-element"><a href="#objectives" class="nav-link">Objetivos</a></li>
+                <li class="nav-element"><a href="#goals" class="nav-link">Objetivos</a></li>
                 <li class="nav-element"><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li class="nav-element"><a href="#contacto" class="nav-link">Contacto</a></li>
             </ul>
         </nav>
 
@@ -59,7 +60,7 @@
                 <h1>El crecimiento es<br/>un camino<br/>para cada d&iacute;a</h1>
                 <h3>Signorini Ezequiel</h3>
             </section>
-            <img src="/assets/images/landing-img.webp" alt="landing-img">
+            <img src="/assets/images/landing-img.webp" alt="landing-img" class="landing-img">
         </div>
     </header>
     <main>
@@ -95,19 +96,18 @@
                     <span class="tooltip-box">python</span>
                 </div>
             </div>
-            <a href="/know-more.html" class="know-more">Descubrir m&aacute;s <i class="fa-solid fa-certificate know-more-icon"></i></a>
+            <a href="/know-more.html" class="know-more"><i class="fa-solid fa-certificate know-more-icon"></i> Descubrir m&aacute;s</a>
         </article>
 
-        <article id="objectives">
+        <article id="goals">
             <h2 class="title-right">Objetivos</h2>
 
-            <div class="flex objectives-container">
-                <img src="/assets/images/thinking.webp" alt="thinking">
-                <p class="objectives-text animated-vertical">
-                    <b>M</b>&iacute; misi&oacute;n como programador es ayudar a las empresas en sus ideales
-                    por medio de mis conocimientos y experiencia. Poniendo a un lado
-                    las diferencias y trabajando en equipo, que es a m&iacute; entender la mejor forma
-                    de mejorar y llegar al objetivo de la mejor forma posible.
+            <div class="flex goals-container">
+                <img src="/assets/images/goals-img.webp" alt="goals-img" class="goals-img">
+                <p class="goals-text animated-vertical">
+                    <b>A</b>yudar a las empresas
+                    en sus ideales por medio de
+                    mis conocimientos y experiencia
                 </p>
             </div>
         </article>
@@ -127,63 +127,26 @@
         </article>
     </main>
     <footer>
-        <div class="flex footer-container">
-            <img src="/assets/images/footer-img.webp" alt="SIGNORINI Ezequiel" class="footer-img">
-            <!-- <section class="flex">
-                <div class="links">
-                    <h6 class="footer-title">Navegar</h6>
-                    <a href="/contacto.html" class="footer-link">Mail</a>
-                    <br>
-                    <a href="https://github.com/Signorini-Ezequiel" class="footer-link" target="_bank">GitHub</a>
-                    <a href="#landing" class="title footer-link">Inicio</i></a>
-                </div>
-                <div class="links">
-                    <h6 class="footer-title">Proyectos</h6>
-                    <a href="/code.html" class="footer-link">CODE</a>
-                    <a href="#projects" class="title footer-link">Ver todos</i></a>
-                </div>
-            </section> -->
-
-            <table>
-                <thead>
-                    <tr>
-                        <th class="footer-logo">SE</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="footer-title">Navegar</td>
-                        <td class="footer-title">Proyectos</td>
-                    </tr>
-                    <tr>
-                        <td class="footer-link">
-                            <a href="/contacto.html" class="footer-link">Mail</a>
-                        </td>
-                        <td class="footer-link">
-                            <a href="/code.html" class="footer-link">CODE</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="footer-link">
-                            <a href="https://github.com/Signorini-Ezequiel" class="footer-link" target="_bank">GitHub</a>
-                        </td>
-                        <td class="footer-link">
-                            <a href="#projects" class="title footer-link">Ver todos</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="footer-link">
-                            <a href="#landing" class="title footer-link">Inicio</i></a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="flex footer-container" id="contacto">
+            <form>
+                <h3>Cont&aacute;ctame</h3>
+    
+                <label for="name">Nombre</label>
+                <input type="text" name="name">
+    
+                <label for="email">Mail</label>
+                <input type="email" name="email" required>
+    
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" cols="30" rows="10" required></textarea>
+    
+                <button type="submit">Enviar</button>
+            </form>
+            <h6>&copy;2023 signoezequiel</h6>
         </div>
     </footer>
     
     <!-- Own JS file -->
     <script src="/index.js"></script>
-    <!-- Bootstrap JS file -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
 </body>
 </html>
